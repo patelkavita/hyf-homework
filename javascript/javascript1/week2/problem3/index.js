@@ -18,6 +18,6 @@ if(temperature>25)//in degree celcius
         return "shweter";
      }
 }
-let val=document.getElementById("temp").value;
+const val=document.getElementById("temp").value;
 console.log("You should wear "+clothesToWear(val));
 }
