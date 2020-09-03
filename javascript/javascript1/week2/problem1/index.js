@@ -28,17 +28,19 @@ What do we do if useFormalName is not given as an argument?
 Remember to consider someone calling the function with an empty string as firstname and lastname.*/
 
 function fullName() {
-  function getFullname(firstname,surname,useFormalName)
-  {
-    if(useFormalName==true){
-  return "lord "+firstname+" "+surname;
+  function getFullname(firstname, surname, useFormalName) {
+    if (useFormalName == true)
+     {
+      return "lord " + firstname + " " + surname;
+       } 
+    
+    else {
+      return firstname + " " + surname;
+    }
   }
-  else{
-    return firstname+" "+surname;
-  }
-}
-let fullname1 = document.getElementById("name").value;
-let fullname2 = document.getElementById("Sname").value;
-let useFormalName= document.getElementById("check").checked;
-console.log(getFullname(fullname1,fullname2,useFormalName));
+
+  const fullname1 = document.getElementById("name").value;
+  const fullname2 = document.getElementById("Sname").value;
+  const useFormalName = document.getElementById("check").checked;
+  console.log(getFullname(fullname1, fullname2, useFormalName));
 }
