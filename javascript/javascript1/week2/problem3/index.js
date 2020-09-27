@@ -7,17 +7,15 @@ An example is:
 
 const clothesToWear = youCreateThisFunctionName(18);
 console.log(clothesToWear); // Logs out: "shorts and a t-shirt" */
-function temp1(){
-function clothesToWear(temperature)
-{
-if(temperature>25)//in degree celcius
-   {   
-        return "shorts and t-shirt";
+function getTemperature() {
+  function clothesToWear(temperature) {
+    if (temperature > 25) { //in degree celcius
+      return "Shorts and T-shirt";
+    } 
+    else {
+      return "Sweater";
     }
-   else{
-        return "shweter";
-     }
-}
-const val=document.getElementById("temp").value;
-console.log("You should wear "+clothesToWear(val));
+  }
+  const temperature = document.getElementById("temp").value;
+  console.log("You should wear " + clothesToWear(temperature));
 }
